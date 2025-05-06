@@ -10,6 +10,7 @@ public class ListaUtils {
         }
         return false;
     }
+
     
     // Ejercicio 2: Invertir una lista genérica
     public static <T> Node<T> invertirLista(Node<T> head) {
