@@ -10,6 +10,7 @@ public class Tarea {
     public String getTítulo() {
         return título;
     }
+
     
     public int getPrioridad() {
         return prioridad;
