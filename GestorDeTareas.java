@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class GestorDeTareas<T> {
     private Node<T> head;
     private List<T> tareasCompletadas;
