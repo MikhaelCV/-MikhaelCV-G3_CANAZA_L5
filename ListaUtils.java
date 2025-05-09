@@ -1,5 +1,5 @@
 public class ListaUtils {
-    // Ejercicio 1: Buscar un elemento genérico en una lista
+    // Ejercicio 1:busca un elemento genérico en una lista
     public static <T> boolean buscarElemento(Node<T> head, T valor) {
         Node<T> current = head;
         while (current != null) {
@@ -12,7 +12,7 @@ public class ListaUtils {
     }
 
     
-    // Ejercicio 2: Invertir una lista genérica
+    // Ejercicio 2: invertir una lista genérica
     public static <T> Node<T> invertirLista(Node<T> head) {
         Node<T> prev = null;
         Node<T> current = head;
@@ -28,7 +28,7 @@ public class ListaUtils {
         return prev;
     }
     
-    // Ejercicio 3: Insertar un nodo al final
+    // Ejercicio 3: insertar un nodo al final
     public static <T> Node<T> insertarAlFinal(Node<T> head, T valor) {
         Node<T> newNode = new Node<>(valor);
         
@@ -45,7 +45,7 @@ public class ListaUtils {
         return head;
     }
     
-    // Ejercicio 4: Contar los nodos
+    // Ejercicio 4:contar los nodos
     public static <T> int contarNodos(Node<T> head) {
         int count = 0;
         Node<T> current = head;
@@ -56,7 +56,7 @@ public class ListaUtils {
         return count;
     }
     
-    // Ejercicio 5: Comparar dos listas
+    // Ejercicio 5:ccomparar dos listas
     public static <T> boolean sonIguales(Node<T> lista1, Node<T> lista2) {
         Node<T> current1 = lista1;
         Node<T> current2 = lista2;
@@ -72,7 +72,7 @@ public class ListaUtils {
         return current1 == null && current2 == null;
     }
     
-    // Ejercicio 6: Concatenar dos listas
+    // Ejercicio 6:concatenar dos listas
     public static <T> Node<T> concatenarListas(Node<T> lista1, Node<T> lista2) {
         if (lista1 == null) return lista2;
         if (lista2 == null) return lista1;
