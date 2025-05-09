@@ -82,7 +82,7 @@ public class GestorDeTareas<T> {
         return count;
     }
     
-    // Obtiene la tarea más prioritaria (solo para objetos Tarea)
+    // obtiene la tarea más prioritaria (solo para objetos Tarea)
     public T obtenerTareaMasPrioritaria() {
         if (head == null) return null;
         
@@ -104,7 +104,7 @@ public class GestorDeTareas<T> {
         return (T) maxPrioridad;
     }
     
-    // Invierte la lista enlazada
+    // invierte la lista enlazada
     public void invertirTareas() {
         Node<T> prev = null;
         Node<T> current = head;
@@ -120,7 +120,7 @@ public class GestorDeTareas<T> {
         head = prev;
     }
     
-    // Transfiere una tarea a la lista de completadas
+    //transfiere una tarea a la lista de completadas
     public boolean marcarComoCompletada(T tarea) {
         if (eliminarTarea(tarea)) {
             tareasCompletadas.add(tarea);
@@ -129,7 +129,7 @@ public class GestorDeTareas<T> {
         return false;
     }
     
-    // Muestra las tareas completadas
+    //muestra las tareas completadas
     public void imprimirTareasCompletadas() {
         System.out.println("=== Lista de Tareas Completadas ===");
         for (T tarea : tareasCompletadas) {
