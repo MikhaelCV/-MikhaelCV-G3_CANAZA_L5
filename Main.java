@@ -1,33 +1,33 @@
 public class Main {
     public static void main(String[] args) {
-        // Crear gestor de tareas con objetos Tarea
+        // crear gestor de tareas con objetos Tarea
         GestorDeTareas<Tarea> gestor = new GestorDeTareas<>();
         
-        // Agregar tareas
+        // agregar tareas
         gestor.agregarTarea(new Tarea("Hacer informe", 2));
         gestor.agregarTarea(new Tarea("Revisar código", 3));
         gestor.agregarTarea(new Tarea("Preparar presentación", 1));
         
-        // Imprimir tareas
+        // imprimir tareas
         gestor.imprimirTareas();
         
-        // Eliminar una tarea
+        // eeliminar una tarea
         Tarea tareaAEliminar = new Tarea("Revisar código", 3);
         if (gestor.eliminarTarea(tareaAEliminar)) {
             System.out.println("Tarea eliminada con éxito");
         }
         
-        // Verificar si existe una tarea
+        // verificar si existe una tarea
         Tarea tareaABuscar = new Tarea("Preparar presentación", 1);
         System.out.println("¿Existe la tarea? " + gestor.contieneTarea(tareaABuscar));
         
-        // Contar tareas
+        // contar tareas
         System.out.println("Total de tareas: " + gestor.contarTareas());
         
-        // Obtener tarea más prioritaria
+        //obtener tarea más prioritaria
         System.out.println("Tarea más prioritaria: " + gestor.obtenerTareaMasPrioritaria());
         
-        // Invertir la lista
+        //invertir la lista
         gestor.invertirTareas();
         System.out.println("Lista invertida:");
         gestor.imprimirTareas();
@@ -36,19 +36,19 @@ public class Main {
         Tarea tareaCompletada = new Tarea("Hacer informe", 2);
         gestor.marcarComoCompletada(tareaCompletada);
         
-        // Mostrar ambas listas
+        //mostrar ambas listas
         gestor.imprimirTareas();
         gestor.imprimirTareasCompletadas();
         
-        // Demostración de los ejercicios adicionales
+        // demostración de los ejercicios adicionales
         System.out.println("\n=== Demostración de ejercicios adicionales ===");
         
-        // Crear lista de ejemplo
+        // crear lista de ejemplo
         Node<String> lista = new Node<>("Primero");
         lista.next = new Node<>("Segundo");
         lista.next.next = new Node<>("Tercero");
         
-        // Ejercicio 1: Buscar elemento
+        // ejercicio 1: Buscar elemento
         System.out.println("¿Contiene 'Segundo'? " + ListaUtils.buscarElemento(lista, "Segundo"));
         
         // Ejercicio 2: Invertir lista
@@ -56,7 +56,7 @@ public class Main {
         System.out.println("Lista invertida:");
         imprimirLista(listaInvertida);
         
-        // Ejercicio 3: Insertar al final
+        // Ejercicio 3: insertar al final
         listaInvertida = ListaUtils.insertarAlFinal(listaInvertida, "Cuarto");
         System.out.println("Después de insertar al final:");
         imprimirLista(listaInvertida);
