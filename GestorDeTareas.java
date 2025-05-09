@@ -26,7 +26,7 @@ public class GestorDeTareas<T> {
         }
     }
     
-    // Elimina una tarea si existe
+    // elimina  tarea si existe
     public boolean eliminarTarea(T tarea) {
         if (head == null) return false;
         
@@ -48,7 +48,7 @@ public class GestorDeTareas<T> {
         return false;
     }
     
-    // Busca una tarea
+    // busca tarea
     public boolean contieneTarea(T tarea) {
         Node<T> current = head;
         while (current != null) {
@@ -60,7 +60,7 @@ public class GestorDeTareas<T> {
         return false;
     }
     
-    // Imprime todas las tareas
+    // imprime todas las tareas
     public void imprimirTareas() {
         Node<T> current = head;
         System.out.println("=== Lista de Tareas Pendientes ===");
