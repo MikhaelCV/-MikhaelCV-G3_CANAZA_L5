@@ -7,6 +7,7 @@ public class ListaUtils {
                 return true;
             }
             current = current.next;
+            
         }
         return false;
     }
